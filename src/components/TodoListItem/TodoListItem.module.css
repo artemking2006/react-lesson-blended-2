@@ -1,42 +1,23 @@
 .box {
-  padding: 40px;
-  background-color: var(--color-light);
-  border-radius: 8px;
-
-  color: var(--color-gray);
-  box-shadow: var(--shadow-regular);
-
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.button {
-  position: absolute;
-
-  right: 0;
-
   padding: 20px;
-  transition: transform var(--animation-cubicBezier);
-}
-.button:hover,
-.button:focus {
-  transform: scale(1.05);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
-.button:disabled {
-  color: var(--color-gray);
-  pointer-events: none;
-}
-
-.deleteButton {
-  composes: button;
-  top: 0;
-  color: var(--color-red);
-}
-
+.deleteButton,
 .editButton {
-  composes: button;
-  bottom: 0;
-  color: var(--color-lightBlue);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.deleteButton:hover {
+  color: red;
+}
+
+.editButton:hover {
+  color: green;
 }
